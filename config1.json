@@ -1,0 +1,33 @@
+{
+    "prefix": "!",
+    "verificationRoleName": "Verified",
+    "verifyChannelId": "YOUR_VERIFY_CHANNEL_ID",
+    "verifyMessageId": "YOUR_VERIFY_MESSAGE_ID",
+    "language": "en", 
+    "messages": {
+        "en": {
+            "alreadyVerified": "You are already verified !",
+            "codeSentDM": "A verification code has been sent to your DM. Please check and enter the code here.",
+            "DMClosed": "I couldn't send you a DM! Please make sure your DMs are open.",
+            "enterCode": "Please enter your verification code like this: `!code <your_code>`",
+            "incorrectCode": "The code you entered is incorrect. Please check your DM and try again.",
+            "verifiedSuccess": "You have been verified successfully !",
+            "couldNotFind": "Could not find you in the guild.",
+            "alreadyVerifiedDM": "You are already verified.",
+            "verifyPrompt": "Please use the command `!verify` in the server to receive your verification code.",
+            "codeDM": "Here is the verification code to enter in a server channel."
+        },
+        "fr": {
+            "alreadyVerified": "Vous êtes déjà vérifié !",
+            "codeSentDM": "Un code de vérification a été envoyé dans votre DM. Veuillez vérifier et entrer le code ici.",
+            "DMClosed": "Je n'ai pas pu vous envoyer de DM! Veuillez vous assurer que vos DM sont ouverts.",
+            "enterCode": "Veuillez entrer votre code de vérification comme ceci : `!code <votre_code>`",
+            "incorrectCode": "Le code que vous avez entré est incorrect. Veuillez vérifier votre DM et réessayer.",
+            "verifiedSuccess": "Vous avez été vérifié avec succès !",
+            "couldNotFind": "Impossible de vous trouver dans le serveur.",
+            "alreadyVerifiedDM": "Vous êtes déjà vérifié.",
+            "verifyPrompt": "Veuillez utiliser la commande `!verify` dans le serveur pour recevoir votre code de vérification.",
+            "codeDM": "Voici le code de vérification à entrer dans un salon du serveur."
+        }
+    }
+}
