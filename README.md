@@ -10,7 +10,12 @@ This project sets up a system for user verification via Direct Message (DM) usin
 
 ## ⚙️ Configuration
 
-Before starting the project, it's crucial to configure the `config.json` and `config1.json` files. These files hold the necessary information for the system to work correctly.
+1. **Install modules** Run the following command to install the necessary dependencies:
+   ```bash
+    node install_modules.js
+    ```
+    📦
+2. Before starting the project, it's crucial to configure the `config.json` and `config1.json` files. These files hold the necessary information for the system to work correctly.
 
 ### 🛠️ Example `config.json` structure:
 
