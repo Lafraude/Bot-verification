@@ -67,31 +67,31 @@ client.once('ready', async () => {
                             // PARTIE ANTICRASH //
 ///////////////////////////////////////////////////////////////////////////////
 
-// const CHANNEL_ID = config.excepnocap;
-// function sendErrorEmbed(channel, title, description) {
-//   const embed = new discord.EmbedBuilder()
-//       .setTitle(title)
-//       .setDescription(description)
-//       .setColor('#FF0000')
-//       .setTimestamp();
+ const CHANNEL_ID = config.excepnocap;
+ function sendErrorEmbed(channel, title, description) {
+   const embed = new discord.EmbedBuilder()
+       .setTitle(title)
+       .setDescription(description)
+       .setColor('#FF0000')
+       .setTimestamp();
   
-//   channel.send({ embeds: [embed] });
-// }
+   channel.send({ embeds: [embed] });
+ }
 
-// process.on('uncaughtException', (err) => {
-//   console.error('Une exception non capturée a été détectée:', err.message);
-//   const channel = client.channels.cache.get(CHANNEL_ID);
-//   if (channel) {
-//       sendErrorEmbed(channel, 'Une exception non capturée est survenue', `\`\`\`${err.message}\`\`\``);
-//   }
-// });
-// process.on('unhandledRejection', (reason, promise) => {
-//   console.error('Une promesse rejetée non capturée a été détectée:', promise, 'raison:', reason);
-//   const channel = client.channels.cache.get(CHANNEL_ID);
-//   if (channel) {
-//       sendErrorEmbed(channel, 'Une promesse rejetée non capturée', `\`\`\`${reason}\`\`\``);
-//   }
-// });
+ process.on('uncaughtException', (err) => {
+   console.error('Une exception non capturée a été détectée:', err.message);
+   const channel = client.channels.cache.get(CHANNEL_ID);
+   if (channel) {
+       sendErrorEmbed(channel, 'Une exception non capturée est survenue', `\`\`\`${err.message}\`\`\``);
+   }
+ });
+ process.on('unhandledRejection', (reason, promise) => {
+   console.error('Une promesse rejetée non capturée a été détectée:', promise, 'raison:', reason);
+   const channel = client.channels.cache.get(CHANNEL_ID);
+   if (channel) {
+       sendErrorEmbed(channel, 'Une promesse rejetée non capturée', `\`\`\`${reason}\`\`\``);
+   }
+ });
 ///////////////////////////////////////////////////////////////////////////////
 
 
