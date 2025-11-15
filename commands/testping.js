@@ -31,16 +31,15 @@ client.setMaxListeners(Infinity)
 
 client.on('messageCreate', message => {
     if (message.content === '!testping') {
-        // Crée un embed rigolo avec des émojis et un titre amusant
         const embed = new discord.EmbedBuilder()
-            .setColor(0x00ff00) // Couleur verte
+            .setColor(0x00ff00)
             .setTitle('🏓 Test de Ping !')
             .setDescription(`Le ping actuel est de **${client.ws.ping} ms** !`)
             .addFields(
                 { name: '⚡ Réponse rapide', value: 'Le ping est super rapide !' },
                 { name: '🤖 Mon humeur', value: 'Je suis en pleine forme ! 💪' }
             )
-            .setThumbnail('https://media.giphy.com/media/3o7TKy3w4Zk9e7HV1y/giphy.gif') // Image GIF amusante
+            .setThumbnail('https://media.giphy.com/media/3o7TKy3w4Zk9e7HV1y/giphy.gif')
             .setFooter({ text: 'Pingé avec amour par votre bot préféré', iconURL: client.user.displayAvatarURL() })
             .setTimestamp();
 
@@ -49,4 +48,5 @@ client.on('messageCreate', message => {
 });
 
 client.login(config.token)
+
   .catch("Erreur sur le token" + console.error);
